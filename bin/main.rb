@@ -1,7 +1,8 @@
+#!/usr/bin/env ruby
 require 'nokogiri'
 require 'open-uri'
 
-net = URI.open('https://thenationonlineng.net/')
+net = URI.open('https://thenationonlineng.net')
 
 doc = Nokogiri::HTML(net)
 
