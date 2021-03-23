@@ -6,7 +6,7 @@ This project aims to develop a Web Scraper using Ruby. It is a capstone project 
 ## Built with
   * Ruby 
   * Nokogiri gem
-  * Linter (Stickler, Rubocop)
+  * Linter (Rubocop)
   * Httparty gem
   * Rspec gem
 
@@ -40,10 +40,10 @@ After cloning on your computer, open the folder using your terminal/command prom
 Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. Web scraping software may access the World Wide Web directly using the Hypertext Transfer Protocol, or through a web browser. [read-more](https://en.wikipedia.org/wiki/Web_scraping). 
 
 ### Why I chose this scraper
-I chose to scrape [this website](https://thenationonlineng.net) because I love reading news and one partaining to the nation Nigeria. However, I dedicate this to my sister who love journalism.
+I chose to scrape [this website](https://www.traversymedia.com/) because i have been greatly helped by his rich courses especially for the javascript before i got engaged with microverse.
 
 ### How to use the Scraper
-- The app scrapes a webpage consisting of the Nigeria online national news, their categories with the links respectively.
+- The app scrapes a webpage consisting brad traversy website for all his courses and their title too.
 - It should display the result on the terminal.
 
 
@@ -82,4 +82,4 @@ This project is [MIT](lic.url) licensed.
 - [The Odin Project](https://www.theodinproject.com)
 - [GitHub](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 - [Web Scraping from Wikipedia](https://en.wikipedia.org/wiki/Web_scraping)
-- [The nation online news cooperation](https://thenationonlineng.net)
+- [The brad traversy website](https://www.traversymedia.com/)

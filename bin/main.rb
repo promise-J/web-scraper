@@ -1,10 +1,14 @@
-require 'nokogiri'
-require 'open-uri'
+#!/usr/bin/env ruby
 
-net = URI.open('https://thenationonlineng.net')
+require_relative '../lib/scraper'
 
-doc = Nokogiri::HTML(net)
+puts Scraper.new('https://www.traversymedia.com/').courses
 
-doc.css('.jeg_block_container .jeg_posts_wrap .jeg_posts article .jeg_postblock_content h3 a').each do |link|
-  p link.inner_text
-end
+
+# net = URI.open('https://thenationonlineng.net')
+
+# doc = Nokogiri::HTML(net)
+
+# doc.css('.jeg_postblock_content h3 a').each do |link|
+#   p link.inner_text
+# end
