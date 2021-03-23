@@ -1,7 +1,8 @@
 require 'nokogiri'
 require 'open-uri'
+require_relative './scraper_instr'
 
-class Scraper
+class Scraper < Scraper_play
     attr_reader :url
     def initialize(url)
         @url = url
@@ -21,8 +22,12 @@ class Scraper
         title_cat << second
         title_cat
     end
-    def courses
-       full_page.css('.container-fluid .row div > span').text
+    def course_1
+       full_page.css('.container-fluid div.row .col-md-4').text
+       
+    end
+    def course_2
+       full_page.css('section#youtube .container .col-md-6').text
     end
     
 end

@@ -2,13 +2,11 @@
 
 require_relative '../lib/scraper'
 
-puts Scraper.new('https://www.traversymedia.com/').courses
+web = Scraper.new('https://www.traversymedia.com/')
 
+puts web.welcome
 
-# net = URI.open('https://thenationonlineng.net')
+man = gets.chomp
+webb = web.course_1
 
-# doc = Nokogiri::HTML(net)
-
-# doc.css('.jeg_postblock_content h3 a').each do |link|
-#   p link.inner_text
-# end
+puts man + webb
