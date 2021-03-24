@@ -2,11 +2,51 @@
 
 require_relative '../lib/scraper'
 
-web = Scraper.new('https://www.traversymedia.com/')
+WEB = Scraper.new('https://www.traversymedia.com/')
 
-puts web.welcome
+def getting_started
+WEB.welcome
+puts "Are you ready to scrape? ENTER yes or no"
+choice = gets.chomp
 
-man = gets.chomp
-webb = web.course_1
+until choice == 'yes'
+  puts "enter a valid choice. to scrape Enter yes or no"
+  choice = gets.chomp
+end
 
-puts man + webb
+WEB.about
+WEB.how_to_go
+ready = true
+
+while ready
+  puts 'Choose an option to scrape from the Traversy'
+  scraper_choice  = gets.chomp.to_i
+  case scraper_choice
+  when 1
+   puts  WEB.get_titles
+  when 2
+   p  WEB.course_1
+  when 3
+    p WEB.course_2
+  else
+    puts WEB.error_input
+  end
+  ready = false
+end
+end
+
+re_do = true
+
+while re_do
+  getting_started
+puts 'Do you want to scrape again? choose [yes, no]'
+choice = gets.chomp
+
+until choice == 'yes'
+  puts 'oooop!!! seem you dont want to scrape again. Lets scrape some other time.'
+  re_do = false
+  WEB.end_scrape
+end
+getting_started
+end
+
