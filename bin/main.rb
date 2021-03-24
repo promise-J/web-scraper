@@ -1,5 +1,3 @@
-
-
 require_relative '../lib/scraper'
 
 WEB = Scraper.new('https://www.traversymedia.com/')
