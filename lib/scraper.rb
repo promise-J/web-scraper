@@ -32,7 +32,7 @@ class Scraper < ScraperPlay
   end
 
   def course2
-    full_page.css('section#youtube .container .col-md-6 .bg-white span').text
+    full_page.css('section#youtube .container .col-md-6 .bg-white span').text.gsub("\n", '')
   end
 
   private

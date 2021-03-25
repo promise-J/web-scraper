@@ -7,7 +7,7 @@ This project aims to develop a Web Scraper using Ruby. It is a capstone project 
   * Ruby 
   * Nokogiri gem
   * Linter (Rubocop)
-  * Httparty gem
+  * open-uri gem
   * Rspec gem
 
 ## Getting Started
@@ -66,7 +66,7 @@ Contributions, issues and feature requests are welcome!
    3. Commit your Changes (git commit -m 'Add some GreatImprovement')
    4. Push to the Branch (git push origin feature-scrapper)
    5. Open a Pull Request.<br>
-You can also check the [issues page](issues/).
+You can also check the [issues page](https://github.com/promise-J/web-scraper/issues).
 
 ## Show your support
 

@@ -5,28 +5,23 @@ class ScraperPlay
     @url = url
   end
 
-  def welcome
-    puts "You are welcomed to web scrapping. Let's scrap #{@url}"
+  def welcome(msg)
+    "#{msg} #{@url}"
   end
 
-  def about
-    puts 'This is The Traversy Media official website. This consist of a whole lots of courses to learn Programming.'
+  def about(msg)
+    msg.to_s
   end
 
-  def how_to_go
-    puts "enter:
-      1-- To see the list of the categories of courses availabe
-      2-- To see the list of the most popular web courses
-      3-- To see the list of all youtube crash courses.
-      another other option would exit.
-      "
+  def how_to_go(msg)
+    msg.to_s
   end
 
-  def error_input
-    puts 'Your selection is invalid, try again.'
+  def error_input(msg)
+    msg.to_s
   end
 
-  def end_scrape
-    puts 'Scrape ended. Scrap again later'
+  def end_scrape(msg)
+    msg
   end
 end
