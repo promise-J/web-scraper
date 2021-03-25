@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require_relative '../lib/scraper'
 
 WEB = Scraper.new('https://www.traversymedia.com/')
@@ -8,17 +7,17 @@ def getting_started
   puts 'Are you ready to scrape? ENTER yes or no'
   choice = gets.chomp
 
-  if choice == 'yes'
-    puts WEB.about('This is The Traversy Media official website.
+  return unless choice == 'yes'
+
+  puts WEB.about('This is The Traversy Media official website.
       This consist of a whole lots of courses to learn Programming.')
-    puts WEB.how_to_go("enter:
+  puts WEB.how_to_go("enter:
       1-- To see the list of the categories of courses availabe
       2-- To see the list of the most popular web courses
       3-- To see the list of all youtube crash courses.
       another other option would exit.
       ")
-    confirm
-  end
+  confirm
 end
 
 def confirm
